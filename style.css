@@ -1,0 +1,190 @@
+/* === GENERAL === */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Muli', sans-serif;
+	font-weight: 400;
+}
+
+/* === MAIN === */
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.wrapper .container {
+	padding: 3rem 0;
+}
+
+.container .photo {
+	padding: 1rem;
+}
+
+.container .photo img {
+	width: 90%;
+}
+
+.container .headline {
+	margin: 1rem 0;
+}
+
+.container .headline h1 {
+	font-size: 1.7rem;
+}
+
+.container .icons {
+	letter-spacing: 0.1rem;
+}
+
+.container .icons .fa-star {
+	color: rgb(132, 196, 4);
+}
+
+.container .icons .fa-heart {
+	margin-left: 2rem;
+	color: rgb(216, 0, 0);
+}
+
+.container .bodytext {
+	margin: 1rem 0;
+}
+
+.container .bodytext p {
+	line-height: 1.5rem;
+}
+
+.options .btn {
+	font-size: 1rem;
+	background-color: black;
+	color: white;
+	width: 4rem;
+	padding: 0.5rem;
+	border-radius: 10px;
+	text-transform: uppercase;
+}
+
+.options .btn:hover {
+	background-color: white;
+	color: black;
+}
+
+/* === MEDIA QUERIES === */
+@media (min-width: 768px) {
+	.wrapper {
+		width: 90%;
+	}
+
+	.wrapper .container {
+		display: flex;
+	}
+
+	.container .photo {
+		margin: auto 0;
+		width: 40%;
+	}
+
+	.container .text-box {
+		width: 60%;
+	}
+
+	.container .photo img {
+		width: 100%;
+	}
+
+	.container .headline h1 {
+		font-size: 1.9rem;
+	}
+
+	.container .icons {
+		font-size: 1.5rem;
+	}
+
+	.container .bodytext p {
+		font-size: 1.3rem;
+		line-height: 1.7rem;
+	}
+
+	.options .btn {
+		font-size: 1.2rem;
+		background-color: black;
+		color: white;
+		width: 7rem;
+		margin: 0.5rem 0.7rem;
+	}
+
+	.options .btn:hover {
+		background-color: white;
+		color: black;
+	}
+}
+
+@media (min-width: 1024px) {
+	.wrapper {
+		width: 90%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.wrapper .container {
+		display: block;
+		width: 30%;
+		float: left;
+		margin-top: 3rem;
+	}
+
+	.wrapper .container::after {
+		content: '';
+		padding: 0;
+		display: block;
+	}
+
+	.container .photo,
+	.container .text-box {
+		margin: auto 0;
+		width: 100%;
+	}
+
+	.container .photo img {
+		width: 100%;
+	}
+
+	.container .headline {
+		margin: 2rem 0;
+	}
+
+	.container .headline h1 {
+		font-size: 2.1rem;
+	}
+
+	.container .icons {
+		font-size: 1.7rem;
+		letter-spacing: 0.4rem;
+	}
+
+	.container .bodytext {
+		margin: 2.5rem 0;
+	}
+
+	.container .bodytext p {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	.options .btn {
+		font-size: 1.4rem;
+		background-color: black;
+		color: white;
+		width: 7rem;
+		margin: 0.5rem 0.5rem;
+	}
+
+	.options .btn:hover {
+		background-color: white;
+		color: black;
+	}
+}
